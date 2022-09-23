@@ -1,18 +1,4 @@
-# Big Code Project
-
-This repository serves as place for administrative things and a place for generic todos and issues. The main code can be found in the following repositories.
-
-## [Megatron-LM](https://github.com/bigcode-project/Megatron-LM)
-This repository contains the Megatron-LM fork used for training the BigCode models.
-
-## [bigcode-analysis](https://github.com/bigcode-project/bigcode-analysis)
-The BigCode analysis repository is a place for all kinds of analysis reports.
-
-## [bigcode-evaluation-harness](https://github.com/bigcode-project/bigcode-evaluation-harness)
-The BigCode evaluation harness is developed to evaluate language models for code on several benchmarks.
-
-## [bigcode-website](https://github.com/bigcode-project/bigcode-website)
-The BigCode website contains the source of the website.
+This repository serves as place for administrative things and a place for generic todos and issues. If you're new to BigCode, we recommend reading the section below to see how you can contribute to the project. 
 
 # What has been done and how can you help?
 
@@ -33,3 +19,16 @@ If you have experience with large-scale transformer training in a multi node set
 
 🏎 **Inference**: We’ve implemented multi-query attention in Transformers and Megatron-LM. While [others](https://arxiv.org/abs/1911.02150) have reported significant speed-ups, we’ve only seen modest improvements of ~20%. You can find the benchmarks in this [issue](https://github.com/bigcode-project/transformers/issues/1). If you are interested in investigating how to speed-up inference, please go to the #wg-inference channel. 
 
+# Overview of our repositories
+
+## [Megatron-LM](https://github.com/bigcode-project/Megatron-LM)
+This repository contains the Megatron-LM fork used for training the BigCode models.
+
+## [bigcode-analysis](https://github.com/bigcode-project/bigcode-analysis)
+The BigCode analysis repository is a place for all kinds of analysis reports.
+
+## [bigcode-evaluation-harness](https://github.com/bigcode-project/bigcode-evaluation-harness)
+The BigCode evaluation harness is developed to evaluate language models for code on several benchmarks.
+
+## [bigcode-website](https://github.com/bigcode-project/bigcode-website)
+The BigCode website contains the source of the website.
