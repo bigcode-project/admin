@@ -2,22 +2,36 @@ This repository serves as place for administrative things and a place for generi
 
 # What has been done and how can you help?
 
-📚 **Dataset**: We’ve collected 120M+ Github repositories and ran a license detector on them. We will soon release a dataset with files from repositories with permissive licenses. We’ve also implemented a [near-deduplication process](https://github.com/bigcode-project/bigcode-analysis/tree/main/data_analysis/near-deduplication) for the dataset.
+📚**Dataset:** We’ve collected 130M+ Github repositories and ran a license detector on them. We will soon release a large dataset with files from repositories with permissive licenses. Besides Github, we would like to add more datasets and create a Code Dataset Catalogue. 
 
-Besides Github, we would like to add more datasets. You can help by suggesting good data sources in [this github issue](https://github.com/bigcode-project/admin/issues/15) and join the #wg-dataset channel. We also welcome you to join the channel if you are interested in discussions about data governance. 
+Open tickets:
+* [Suggest datasets for the Code Dataset Catalogue](https://github.com/bigcode-project/admin/issues/15)
+* [Redact Personally Identifiable Information (PII) from code datasets](https://github.com/bigcode-project/admin/issues/9)
 
-🕵🏻‍♀️ **Evaluation**: We started working on an [evaluation harness](https://github.com/bigcode-project/bigcode-evaluation-harness) to evaluate code generation models in an easy way on a wide range of tasks.
+We encourage you to join #wg-dataset if you are interested in discussions about data governance (e.g. regarding the ethical and legal concerns of the training data, OpenRAIL licenses for code applications, etc). 
 
-You can help by discussing the [current set of tasks](https://docs.google.com/spreadsheets/d/1otSgs2-iDp1KTbasEDlFhTHiaKsYbIRvWrgH_TiubFQ/edit?usp=sharing), suggesting missing evaluation tasks, and joining the #wg-evaluation channel. We also created a list of “Good first issues” [here](https://github.com/bigcode-project/bigcode-evaluation-harness/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+🕵🏻‍♀️**Evaluation:** We started working on an [evaluation harness](https://github.com/bigcode-project/bigcode-evaluation-harness) to evaluate code generation models in an easy way on a wide range of tasks.
 
-💪 **Training**: We’ve been training smaller models (350M-1B parameters) on the ServiceNow cluster through a [fork of Megatron-LM](https://github.com/bigcode-project/Megatron-LM). 
-- We’ve ported [ALiBi](https://arxiv.org/abs/2108.12409) in order to support longer sequences at inference time
-- We’ve implemented [multi-query attention](https://arxiv.org/abs/1911.02150) so as to speed-up incremental decoding
-- The goal is to scale to a ~15B parameter model. We will, however, first run several ablation studies on a smaller scale. We will soon release our experiment plan and solicit your feedback!
+Open tickets:
+* [Suggest tasks for the Evaluation Harness](https://github.com/bigcode-project/admin/issues/17)
+* [Add selected tasks to the Evaluation Harness](https://github.com/bigcode-project/admin/issues/16)
+* [Design prompts for few-shot evaluation tasks](https://github.com/bigcode-project/admin/issues/19) 
 
-If you have experience with large-scale transformer training in a multi node setup, please join the #wg-training channel. 
+Please join #wg-evaluation for all discussions on the evaluation of code LLMs.
 
-🏎 **Inference**: We’ve implemented multi-query attention in Transformers and Megatron-LM. While [others](https://arxiv.org/abs/1911.02150) have reported significant speed-ups, we’ve only seen modest improvements of ~20%. You can find the benchmarks in this [issue](https://github.com/bigcode-project/transformers/issues/1). If you are interested in investigating how to speed-up inference, please go to the #wg-inference channel. 
+💪**Training:** We’ve been training smaller models (350M-1B parameters) on the ServiceNow cluster through [a fork of Megatron-LM](https://github.com/bigcode-project/Megatron-LM). 
+* We’ve ported [ALiBi](https://arxiv.org/abs/2108.12409)  in order to support longer sequences at inference time
+* We’ve implemented [multi-query attention](https://arxiv.org/abs/1911.02150) so as to speed-up incremental decoding
+* The goal is to scale to a ~15B parameter model. We will, however, first run several ablation studies on a smaller scale. We will soon release our experiment plan and ask for your feedback!
+
+We encourage you to get in touch with us at #wg-training if you have experience with large-scale transformer training in a multi node setup. 
+
+🏎 **Inference:** We’ve implemented [multi-query attention](https://arxiv.org/abs/1911.02150) in Transformers and Megatron-LM. While others have[ reported up to a 10x decoding speed-up](https://arxiv.org/abs/1911.02150) over a multi-head attention baseline, [we’ve only seen modest improvements of ~25%](https://github.com/bigcode-project/transformers/issues/1). 
+
+Open tickets:
+* [Improve inference speed of multi-query attention model ](https://github.com/bigcode-project/admin/issues/18)
+
+Please go to the #wg-inference channel for technical discussion on how to improve inference speed of LLMs. You can find a summary of all open tickets [here](https://github.com/orgs/bigcode-project/projects/1/views/1?filterQuery=label%3A%22help+wanted%22). 
 
 # Overview of our repositories
 
